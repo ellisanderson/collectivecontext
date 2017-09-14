@@ -1,7 +1,7 @@
 .context{
   width: 100%;
   position: relative;
-  cursor: default;
+  cursor: pointer;
 
   img{
     width: 100%;
@@ -14,18 +14,19 @@
     top: 0;
     background-color: black;
     @include flex-center;
-    transition: all 1s ease;
+    visibility: visible;
 
     h1{
-      font-size: 3em;
+      font-size: 2em;
       font-weight: 100;
       color:white;
       line-height: 1em;
+      transition: opacity .2s ease;
     }
   }
 
-  .overlay:hover{
-    opacity: 0;
+  .overlay:hover > h1{
+    opacity: .5;
   }
 }
 
@@ -44,5 +45,11 @@
 @media (min-width:1024px) {
   .context{
     width: 33.333%;
+  }
+}
+
+@media (min-width:1366px) {
+  .context{
+    width: 25%;
   }
 }

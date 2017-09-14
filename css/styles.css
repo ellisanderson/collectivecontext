@@ -48,7 +48,7 @@ header {
 .context {
   width: 100%;
   position: relative;
-  cursor: default; }
+  cursor: pointer; }
   .context img {
     width: 100%; }
   .context .overlay {
@@ -60,14 +60,15 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 1s ease; }
+    visibility: visible; }
     .context .overlay h1 {
-      font-size: 3em;
+      font-size: 2em;
       font-weight: 100;
       color: white;
-      line-height: 1em; }
-  .context .overlay:hover {
-    opacity: 0; }
+      line-height: 1em;
+      transition: opacity .2s ease; }
+  .context .overlay:hover > h1 {
+    opacity: .5; }
 
 @media (min-width: 767px) {
   .context {
@@ -75,6 +76,9 @@ header {
 @media (min-width: 1024px) {
   .context {
     width: 33.333%; } }
+@media (min-width: 1366px) {
+  .context {
+    width: 25%; } }
 #introduction {
   height: 100vh;
   display: flex;

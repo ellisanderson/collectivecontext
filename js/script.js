@@ -7,4 +7,12 @@ $(document).ready(function(){
   $('.logo').click(function(){
     $('.ham-nav').fadeOut();
   });
+
+  $('.context .overlay').click(function(){
+    $(this).fadeOut();
+  });
+
+  $('.context img').click(function(){
+    $(this).parent().children().fadeIn();
+  });
 });
