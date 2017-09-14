@@ -1,0 +1,15 @@
+#introduction{
+  height: 100vh;
+  @include flex-center;
+
+  .intro-box{
+    max-width: 500px;
+    margin:0 5%;
+    
+    h1{
+      margin-bottom: 25px;
+      font-size: 3rem;
+      font-weight: 100;
+    }
+  }
+}

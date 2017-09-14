@@ -1,0 +1,48 @@
+.context{
+  width: 100%;
+  position: relative;
+  cursor: default;
+
+  img{
+    width: 100%;
+  }
+
+  .overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    @include flex-center;
+    transition: all 1s ease;
+
+    h1{
+      font-size: 3em;
+      font-weight: 100;
+      color:white;
+      line-height: 1em;
+    }
+  }
+
+  .overlay:hover{
+    opacity: 0;
+  }
+}
+
+
+
+
+
+//////////////////////////////////////////////
+
+@media (min-width:767px) {
+  .context{
+    width: 50%;
+  }
+}
+
+@media (min-width:1024px) {
+  .context{
+    width: 33.333%;
+  }
+}

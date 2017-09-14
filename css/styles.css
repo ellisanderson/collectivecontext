@@ -1,0 +1,130 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 5%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  z-index: 1; }
+  header a {
+    color: white; }
+
+.logo {
+  text-transform: uppercase; }
+  .logo .logo-small {
+    display: none; }
+
+.main-nav {
+  display: none; }
+
+.ham-trigger {
+  cursor: pointer;
+  color: white; }
+
+.ham-nav {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 50px;
+  width: 100vw;
+  background-color: black;
+  border-top: 1px solid white;
+  height: 100vh;
+  text-align: right;
+  padding: 20px 5%; }
+
+@media (min-width: 767px) {
+  .ham-trigger {
+    display: none; }
+
+  .ham-nav {
+    top: -100vh; }
+
+  .main-nav {
+    display: block; } }
+.context {
+  width: 100%;
+  position: relative;
+  cursor: default; }
+  .context img {
+    width: 100%; }
+  .context .overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease; }
+    .context .overlay h1 {
+      font-size: 3em;
+      font-weight: 100;
+      color: white;
+      line-height: 1em; }
+  .context .overlay:hover {
+    opacity: 0; }
+
+@media (min-width: 767px) {
+  .context {
+    width: 50%; } }
+@media (min-width: 1024px) {
+  .context {
+    width: 33.333%; } }
+#introduction {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #introduction .intro-box {
+    max-width: 500px;
+    margin: 0 5%; }
+    #introduction .intro-box h1 {
+      margin-bottom: 25px;
+      font-size: 3rem;
+      font-weight: 100; }
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-color: black; }
+
+* {
+  list-style-type: none;
+  box-sizing: border-box;
+  color: white; }
+
+h1, h2, h3, h4, h5, p, a, ul, li, ol {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  transition: all .2s ease; }
+
+a:hover {
+  opacity: .5; }
+
+p {
+  line-height: 2rem; }
+
+b {
+  background-color: white;
+  color: black; }
+
+section {
+  padding-top: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start; }
+
+audio {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2; }
+
+/*# sourceMappingURL=styles.css.map */

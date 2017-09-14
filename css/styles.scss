@@ -1,0 +1,53 @@
+@import "partials/_variables.scss";
+@import "partials/_mixins.scss";
+@import "partials/_header.scss";
+@import "partials/_context.scss";
+@import "partials/_introduction.scss";
+
+body{
+  font-family: 'Roboto Mono', monospace;
+  background-color: black;
+}
+
+*{
+  list-style-type: none;
+  box-sizing: border-box;
+  color: white;
+}
+
+h1,h2,h3,h4,h5,p,a,ul,li,ol{
+  padding:0;
+  margin:0;
+}
+
+a{
+  text-decoration: none;
+  transition: all .2s ease;
+}
+
+a:hover{
+  opacity: .5;
+}
+
+p{
+  line-height: 2rem;
+}
+
+b{
+  background-color: white;
+  color:black;
+}
+
+section{
+  padding-top: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+audio{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
