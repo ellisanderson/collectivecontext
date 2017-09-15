@@ -14,8 +14,6 @@ header {
 
 .logo {
   text-transform: uppercase; }
-  .logo .logo-small {
-    display: none; }
 
 .main-nav {
   display: none; }
@@ -79,22 +77,29 @@ header {
 @media (min-width: 1366px) {
   .context {
     width: 25%; } }
-#introduction {
-  height: 100vh;
+.text {
   display: flex;
   justify-content: center;
   align-items: center; }
-  #introduction .intro-box {
+  .text .box {
     max-width: 500px;
-    margin: 0 5%; }
-    #introduction .intro-box h1 {
-      margin-bottom: 25px;
-      font-size: 3rem;
-      font-weight: 100; }
+    margin: 0 5% 50px; }
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .7rem; }
 
 body {
   font-family: 'Roboto Mono', monospace;
-  background-color: black; }
+  background-color: black;
+  position: relative; }
 
 * {
   list-style-type: none;
@@ -120,10 +125,20 @@ b {
   color: black; }
 
 section {
-  padding-top: 50px;
+  padding: 50px 0;
   display: flex;
   flex-flow: row wrap;
-  align-content: flex-start; }
+  align-content: flex-start;
+  min-height: 100vh; }
+
+h1 {
+  margin-bottom: 25px;
+  font-size: 3rem;
+  font-weight: 100; }
+
+h2 {
+  font-weight: 100;
+  line-height: 2rem; }
 
 audio {
   position: fixed;

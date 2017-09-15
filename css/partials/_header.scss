@@ -3,7 +3,6 @@ header{
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  // border-bottom: 1px solid white;
   padding:0 5%;
   height: 50px;
   position: fixed;
@@ -21,10 +20,6 @@ header{
 
 .logo{
   text-transform: uppercase;
-
-  .logo-small{
-    display: none;
-  }
 }
 
 ///////////////////////////////////////////
@@ -58,14 +53,6 @@ header{
 //////////////////////////////////////////
 
 @media (min-width:767px) {
-  .logo{
-    // .logo-small{
-    //   display: none;
-    // }
-    // .logo-large{
-    //   display: block;
-    // }
-  }
 
   .ham-trigger{
     display: none;
