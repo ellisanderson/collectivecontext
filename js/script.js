@@ -20,4 +20,5 @@ $(document).ready(function(){
   $('.context img').click(function(){
     $(this).parent().children().fadeIn();
   });
+
 });
