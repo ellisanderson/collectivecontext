@@ -26,6 +26,17 @@ header{
 
 .main-nav{
   display: none;
+
+  li{
+    margin-left: 15px;
+    padding-left: 15px;
+    border-left: 1px solid white;
+  }
+
+  li:first-of-type{
+    border:none;
+  }
+
 }
 
 .ham-trigger{
@@ -44,6 +55,7 @@ header{
   height: 100vh;
   text-align: right;
   padding: 20px 5%;
+  line-height: 2rem;
 }
 
 
@@ -63,6 +75,6 @@ header{
   }
 
   .main-nav{
-    display: block;
+    display: flex;
   }
 }
