@@ -1,0 +1,14 @@
+.screenCenter{
+  @include flex-center;
+  flex-direction: column;
+
+  .text-box{
+    max-width: 500px;
+    margin:0 10% 50px;
+  }
+
+  #quotesText{
+    text-align: center;
+    font-style: italic;
+  }
+}

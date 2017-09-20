@@ -21,4 +21,20 @@ $(document).ready(function(){
     $(this).parent().children().fadeIn();
   });
 
+  var quotes = [
+    "Imagining someone punching a hole in the tunnel wall late at night out of frustration certainly makes the tunnel experience more interesting.",
+    "I've always pondered who decided to make the entrance of that tunnel like a little meditation garden. It's random, but a nice break between the parking lot and the damp tunnel.",
+    "Escape routes aren't always good, as this one makes me have wet feet as the puddles are almost impossible to miss.",
+    "The tunnel feels very confined to me, I feel that you could grab everything with your hair touching the roof.",
+    "It appears to be something that will last for a very long time.",
+    "I feel like it's always wet and damp in there, regardless of the last time it rained.",
+    "I can feel secure knowing it was under surveillance.",
+    "If a tunnel is always silent, is it really a tunnel or is it just an extension of the same space you were just in? What's its purpose?",
+    "As I was walking up to the tunnel it seemed mysterious. But when I first went in it felt intimate...",
+  ];
+
+  var i = (Math.random() * quotes.length) | 0;
+
+  $('#quotesText').html(quotes[i]);
+
 });
