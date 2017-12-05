@@ -2,8 +2,9 @@ $(document).ready(function(){
   var header = "<header><div class='logo'><a href='index.html'>&rarr;CC&larr;</a></div><nav><ul class='main-nav'><li><a href='tunnel.html'>Tunnel</a></li><li><a href='instructions.html'>Instructions</a></li></ul><div class='ham-trigger'>Menu</div><div class='ham-nav'><ul><li><a href='tunnel.html'>Tunnel</a></li><li><a href='instructions.html'>Instructions</a></li></ul></div></nav></header>";
   var footer = "<footer><a href='instructions.html'>Want to participate?</a></footer>";
 
-  $('body').prepend(header);
-  $('body').append(footer);
+  // $('body').prepend(header);
+  // $('body').append(footer);
+  $('body').append('<footer>Ellis Henry Anderson / 2017</footer');
 
   $('.ham-trigger, .ham-nav').click(function(){
     $('.ham-nav').fadeToggle();
